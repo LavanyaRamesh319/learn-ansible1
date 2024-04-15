@@ -1,4 +1,4 @@
 - name: print hello world
-  ansible.builtin.debud:
+  ansible.builtin.debug:
     msg: Hello from role sample
 

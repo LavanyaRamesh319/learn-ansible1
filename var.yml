@@ -1,0 +1,14 @@
+- name: Demo on play Level Variables
+  hosts: all
+  vars:
+    URL: play.example.com
+  tasks:
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: URL - {{ URL }}
+
+#In Ansible variable will be accessed using {{ }}
+#Ansible supports double quotes and single quotes , quotes are not mandatory
+# quotes are mandatory when value starts with a variable
+# msg: {{ URL }} --> This requirse quoting
+# msg: URL - {{ URL }} --> This does not require quoting

@@ -31,3 +31,10 @@
         msg: URL - {{ URL }}
       vars:
         URL: tasks.example.com
+
+- name: variable from Roles
+  hosts: all
+  vars:
+    URL_PLAY: play.example.com
+  roles:
+    - sample

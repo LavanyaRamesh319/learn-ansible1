@@ -1,0 +1,6 @@
+- name: print a parameter
+  hosts: all
+  tasks:
+    - name: Print a parameter
+      ansible.builtin.debug:
+        msg: Parameter - 
